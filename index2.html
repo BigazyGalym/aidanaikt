@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СӨЖ</title>
+    <style>
+        table {
+            width: 70%;
+            border: 3px solid black;
+            border-collapse: collapse;
+            background-color: #f2f2f2; /* Кестенің түсі */
+        }
+        table th, table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Кесте және форма құру</h1>
+
+    <!-- Үлгі бойынша кесте -->
+    <table>
+        <tr>
+            <th>Сабақ</th>
+            <th>Мұғалім</th>
+            <th>Кесте</th>
+        </tr>
+        <tr>
+            <td>Информатика</td>
+            <td>Айжан</td>
+            <td>Дүйсенбі</td>
+        </tr>
+        <tr>
+            <td>Математика</td>
+            <td>Ербол</td>
+            <td>Сәрсенбі</td>
+        </tr>
+    </table>
+
+    <!-- Үлгі бойынша форма -->
+    <div class="form-container">
+        <form action="submit_form.php" method="post">
+            <label for="name">Атыңыз:</label><br>
+            <input type="text" id="name" name="name" placeholder="Атыңызды енгізіңіз"><br><br>
+
+            <label for="email">Электронды пошта:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email енгізіңіз"><br><br>
+
+            <label for="message">Хабарлама:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Хабарламаңызды жазыңыз"></textarea><br><br>
+
+            <button type="submit">Жіберу</button>
+        </form>
+    </div>
+</body>
+</html>
